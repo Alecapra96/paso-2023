@@ -53,10 +53,14 @@ function App() {
   return (
     
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto mt-8 px-4">
-  <div className="col-span-full mb-4">
-    <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4">
-      <p className="text-yellow-700">
-        Los datos son tomados de <a href="https://resultados.gob.ar/" className="underline" target="_blank" rel="noopener noreferrer">https://resultados.gob.ar/</a>. Para actualizar los datos, por favor refresca la página.
+ <div className="col-span-full mt-4">
+    <div className="bg-red-500 p-4 text-white text-center">
+      <p>
+        Datos tomados de <a href="https://resultados.gob.ar/" className="underline" target="_blank" rel="noopener noreferrer">https://resultados.gob.ar/</a>. 
+        Para actualizar los datos, refresca la página.
+      </p>
+      <p className="mt-2">
+        Creado por <a href="https://www.linkedin.com/in/alejandro-capra/" className="underline" target="_blank" rel="noopener noreferrer">Alejandro Capra</a>
       </p>
     </div>
   </div>
