@@ -11,8 +11,8 @@ function App() {
   const [data, setData] = useState(null);
   const maxPossibleVotes = 35394425; // Máximo de votos posibles
 
-  useEffect(() => {
-    axios.get('/api/backend-difu/scope/data/getScopeData/00000000000000000000000b/1/1')
+  useEffect(() => {scope
+    axios.get('/backend-difu/scope/data/getScopeData/00000000000000000000000b/1/1')
     .then((response) => {
         console.log(response.data);
         setData(response.data.mapa[0].scopes[0].partidos);
@@ -22,6 +22,16 @@ function App() {
       });
   }, []);
 
+  useEffect(() => {scope
+    axios.get('/api/backend-difu//data/getScopeData/00000000000000000000000b/1/1')
+    .then((response) => {
+        console.log(response.data);
+        setData(response.data.mapa[0].scopes[0].partidos);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+  }, []);
 
   if (!data) {
     return <div className="text-center mt-8">Cargando...</div>;

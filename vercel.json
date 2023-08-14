@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/backend-difu/:path*",
+        "destination": "https://resultados.gob.ar/backend-difu/:path*"
+      }
+    ]
+  }
+  
