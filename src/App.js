@@ -12,8 +12,8 @@ function App() {
   const maxPossibleVotes = 35394425; // Máximo de votos posibles
 
   useEffect(() => {
-    axios.get('/backend-difu/scope/data/getScopeData/00000000000000000000000b/1/1')
-      .then((response) => {
+    axios.get('/api/backend-difu/scope/data/getScopeData/00000000000000000000000b/1/1')
+    .then((response) => {
         console.log(response.data);
         setData(response.data.mapa[0].scopes[0].partidos);
       })
