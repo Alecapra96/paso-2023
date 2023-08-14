@@ -6,6 +6,9 @@ module.exports = function(app) {
     createProxyMiddleware({
       target: 'https://resultados.gob.ar',
       changeOrigin: true,
+      pathRewrite: {
+        '^/backend-difu': '/backend-difu',
+      },
     })
   );
 };
